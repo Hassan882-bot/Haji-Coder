@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+  --white-color: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);    /* gaar ahaan background-ka */ 
+  --Stone-150: hsl(30, 18%, 87%);   /* gaar ahaan background-ka */ 
+  --Stone-600: hsl(31, 25%, 33%);   /* gaar ahaan ciwanada */
+  --stone-400: rgb(59, 59, 59);     /*gaar ahaan paragraphska.*/
+  --Stone-900: hsl(24, 5%, 18%);     /* gaar ahaan horgalayaasha-paragraph-ka */ 
+
+   --Brown-800: hsl(14, 45%, 36%);     /*Qiimayaasha nutritionka color-kooda */
+   --Rose-800: hsl(332, 51%, 32%);     /*Ciwaanka preparation-time ka */
+   --Rose-50: hsl(330, 100%, 98%);    /*Preparation-time background keeda */
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'YoungSerif', sans-serif ;
+  background-color: var(--Stone-100);
+}
+
+/* ============MOBILE FIRST=========== */
+.wrapper{
+  padding: 4rem;
+  width: 100%;
+}
+
+
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--white-color);
+}
+
+.second_container{
+  padding: 2rem;
+}
+
+
+
+.Recipe-img{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.divider{
+  border-bottom: 1px solid #cbc8c8;
+}
+
+.span__bold-text{
+  font-weight: 700;
+}
+
+
+.header h1{
+  font-family: 'Young serif', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: .29rem;
+}
+
+.header p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: sans-serif;
+  letter-spacing: .04rem;
+  line-height: 1.6rem;
+  color: var(--stone-400);
+}
+
+
+.preparation-time{
+  padding: 2rem 3rem;
+  background-color: var(--Rose-50);
+  border-radius: 1rem;
+
+  li::marker{
+  color: var(--Rose-800);
+  }
+  
+}
+
+
+.preparation-time h2{
+  color: var(--Rose-800);
+  font-size: 1.5rem;
+}
+
+.preparation-time li{
+  padding: .5rem 1rem;
+  font-size: 1.3rem;
+  font-family: 'Outfit', sans-serif;
+  color: var(--stone-400);
+}
+
+
+
+.ingredents h1{
+  font-family: 'Young serif', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  color: var(--Brown-800);  
+}
+
+
+.ingredents li{
+  font-size: 1.2rem;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: .06rem;
+  line-height: 1.6rem;
+  padding: .3rem 1rem;
+  color: var(--stone-400);
+}
+
+.ingredents li::marker{
+  color: var(--Brown-800);
+}
+
+
+.instructions h1{
+  color: var(--Brown-800);
+  font-size: 1.6rem;
+  font-family: 'Young serif', sans-serif;
+  letter-spacing: .08rem;
+}
+
+.instructions li{
+  padding: .3rem 1.1rem;
+  line-height: 2rem;
+  letter-spacing: .03rem;
+  font-size: 1.2rem;
+  color: var(--stone-400);
+}
+
+.instructions .span__bold-text{
+  color: var(--Stone-600);
+}
+
+.instructions li::marker{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--Brown-800);
+}
+
+
+.nutrition h1{
+  color: var(--Brown-800);
+  font-family: 'Young serif' sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: .03rem;
+}
+
+.nutrition p{
+  font-size: 1.2rem;
+  font-family: 'Outfit', sans-serif;
+  color: var(--stone-400);
+}
+
+.calories-info p{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  margin-block-start: 2rem;
+  font-size: 1.3rem;
+
+}
+
+.calories-info span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--Brown-800);
+  margin-block-start: -1.6rem;
+}
+
+
+
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
+  margin-top: 1rem;
+  border-bottom: 4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+.footer a{
+  text-decoration: none;
+  color: var(--Brown-800);
+  font-weight: 700;
+  border-bottom: 2px solid var(--Rose-800);
+}
+
+
+/* ================desktop Desing============ */
+
+@media (min-width: 1000px){ 
+
+.container{
+  width: 50%;
+  margin: 8rem auto;
+  padding: 1.7rem;
+  background-color: var(--white-color);
+  border-radius: 1rem;
+}
+
+.divider{
+  border-bottom: 1px solid #cbc8c8;
+}
+
+.span__bold-text{
+  font-weight: 700;
+}
+
+.Recipe-img{
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.header h1{
+  font-family: 'Young serif', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: .29rem;
+}
+
+.header p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: sans-serif;
+  letter-spacing: .04rem;
+  line-height: 1.6rem;
+  color: var(--stone-400);
+}
+
+
+.preparation-time{
+  padding: 2rem 3rem;
+  background-color: var(--Rose-50);
+  border-radius: 1rem;
+
+  li::marker{
+  color: var(--Rose-800);
+  }
+  
+}
+
+
+.preparation-time h2{
+  color: var(--Rose-800);
+  font-size: 1.5rem;
+}
+
+.preparation-time li{
+  padding: .5rem 1rem;
+  font-size: 1.3rem;
+  font-family: 'Outfit', sans-serif;
+  color: var(--stone-400);
+}
+
+
+
+.ingredents h1{
+  font-family: 'Young serif', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  color: var(--Brown-800);  
+}
+
+
+.ingredents li{
+  font-size: 1.2rem;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: .06rem;
+  line-height: 1.6rem;
+  padding: .3rem 1rem;
+  color: var(--stone-400);
+}
+
+.ingredents li::marker{
+  color: var(--Brown-800);
+}
+
+
+.instructions h1{
+  color: var(--Brown-800);
+  font-size: 1.6rem;
+  font-family: 'Young serif', sans-serif;
+  letter-spacing: .08rem;
+}
+
+.instructions li{
+  padding: .3rem 1.1rem;
+  line-height: 2rem;
+  letter-spacing: .03rem;
+  font-size: 1.2rem;
+  color: var(--stone-400);
+}
+
+.instructions .span__bold-text{
+  color: var(--Stone-600);
+}
+
+.instructions li::marker{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--Brown-800);
+}
+
+
+.nutrition h1{
+  color: var(--Brown-800);
+  font-family: 'Young serif' sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: .03rem;
+}
+
+.nutrition p{
+  font-size: 1.2rem;
+  font-family: 'Outfit', sans-serif;
+  color: var(--stone-400);
+}
+
+.calories-info p{
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  margin-block-start: 2rem;
+  font-size: 1.3rem;
+
+}
+
+.calories-info span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  color: var(--Brown-800);
+  margin-block-start: -1.6rem;
+}
+
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .6rem;
+  margin-top: -3rem;
+  border-bottom: 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+.footer a{
+  text-decoration: none;
+  color: var(--Brown-800);
+  font-weight: 700;
+  border-bottom: 2px solid var(--Rose-800);
+}
+
+}
